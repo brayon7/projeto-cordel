@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: v;
+}
+header {
+    background-color: black;
+    text-align: center;
+    color: white;
+    min-width: 400px;
+    width: 100%;
+    height: 120px;
+}
+header > h1 {
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 3.3em;
+}   
+header > a  > p {
+font-size: 1.5em;
+}
+header > a {
+text-decoration: none;
+color: white;
+    cursor: pointer;
+
+}
+header > a:hover{
+    color: burlywood;
+    transition: 1s;
+}
+
+article {
+    margin-top: 50px;
+}
+article > p {
+    padding-left: 10px;
+    line-height: 60 px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+color: white ;
+}
+footer > a {
+    text-decoration: none;
+    color: rgb(202, 195, 195);
+
+}
+footer > a:hover {
+    color: purple;
+    transition-duration: 1s;
+    cursor: pointer;
+}
