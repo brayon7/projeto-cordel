@@ -1,46 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
-body {
-   display: block   ;
+:root {
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'passion one' , cursive;
+    --fonte3: 'sriracha' , cursive;
 }
 
-@media (min-width: 400px) {
-body {
-    font-size: 18pxpx;
-}
-
-}
-
-@media (min-width: 1200px) {
-body {
-    font-size: 24pxpx;
-}
-
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+   display: block;
 }
 
 header {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  min-height: 150px;
-    width: 100%;
-    height: 250px;
+background-color: black;
+color: white;
+text-align: center;
 }
-header > h1 {
-     font-family: 'Passion One', cursive;
 
-   font-variant: small-caps;;
+header > h1 {
+    font-family: var(--fonte2);
+   font-variant: small-caps;
    font-weight: bold;
-    font-size: 10vw;
+   font-size: 10vw;
+   padding-top: 50px;
 }   
 
 
 header > p {
 font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 1rem;    
+padding-bottom: 50px;
 }
 
 
@@ -49,47 +46,66 @@ font-size: 1em;
 text-decoration: none;
 font-weight: bold;
 color: white;
-    cursor: pointer;
+cursor: pointer;
     
 }
+
 a:hover {
 text-decoration: underline;
 color: white;
 
 }
+
 header > a:hover{
     color: burlywood;
     transition: 1s;
 }
 
-article {
-    margin-top: 50px;
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
-article > p{
-     padding-left: 30px;
-    line-height: 60 px;
-    padding-bottom: 20px;
-    font-size: 2em;
-    font-family:  'Sriracha', cursive;
 
-    font-weight: bold;
+
+
+section > p{
+    font-size: 3.5vw;
+    padding-left: 30px;
     line-height: 2em;
+    padding-bottom: 20px;
+    font-family: var(--fonte3);
+    font-weight: bold;
 }
-.p5 {
-    background-color: rgb(119, 111, 111);
+
+
+.normal {
+background-color: white;
 }
+
+
+.imagem {
+    background-color: rgba(51, 51, 51,);
+    color: rgb(255, 255, 255);
+}
+
+.imagem > p {
+    display: inline-block ;
+    background-color: rgba(0, 0, 0, 0.233);
+width: 400px;
+}
+
 footer {
     text-align: center;
     background-color: black;
-color: white ;
+    color: white ;
 }
 footer > a {
     text-decoration: none;
     color: rgb(202, 195, 195);
 
 }
-footer > a:hover {
+footer >p >a:hover {
     color: purple;
     transition-duration: 1s;
     cursor: pointer;
