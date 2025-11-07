@@ -78,7 +78,7 @@ section > p{
     font-weight: bold;
 }
 
-
+ 
 .normal {
 background-color: white;
 }
@@ -87,12 +87,29 @@ background-color: white;
 .imagem {
     background-color: rgba(51, 51, 51,);
     color: rgb(255, 255, 255);
+    box-shadow: inset 4px 6px 13px 0px rgba(0, 0, 0, 0.425);
 }
 
 .imagem > p {
-    display: inline-block ;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.233);
-width: 400px;
+    width: 400px;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+#img01 {
+    background-image: url(img/background001.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+}
+
+#img02 {
+    background-image: url(img/background002.jpg);
+    background-attachment: fixed;
+    background-position: right center ;
+    background-size: cover;
 }
 
 footer {
